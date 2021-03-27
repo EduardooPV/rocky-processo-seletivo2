@@ -54,6 +54,7 @@ html {
 .section__card {
     width: 23%;
     min-width: 200px;
+    max-width: 300px;
     margin: 1rem 1rem;
     box-shadow: 5px 5px 20px black;
 
@@ -67,7 +68,7 @@ html {
     animation: AnimationLeftToRight 1s 1s 1;
 }
 .section__card:nth-child(2) {
-    animation: AnimationDownToUp 1s 1s 1;
+    animation: AnimationDownTopUp 1s 1s 1;
 }
 .section__card:nth-child(3) {
     animation: AnimationRightToLeft 1s 1s 1;
@@ -125,29 +126,33 @@ html {
 
 /*================= Action category =================*/
 .films__action {
-    min-width: 730px;
 
     padding: 5px;
-    margin-bottom: 10px;
-
+    
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1400px;
     background-color: var(--cards__background);
 }
 
 .films__animation {
-    min-width: 730px;
 
     padding: 5px;
     margin-bottom: 10px;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1400px;
 
     background-color:  var(--cards__background);
 }
 
 .films__comedy {
-    min-width: 730px;
 
     padding: 5px;
     margin-bottom: 10px;
-
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1400px;
     background-color:  var(--cards__background);
 }
 
