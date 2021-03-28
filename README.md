@@ -32,7 +32,7 @@
 ## Adicionais: 
   - [x] Logo criada exclusivamente para o projeto.
 
-### Visite o site: [CLICANDO AQUI!](https://project-rocky.netlify.app/)
+### Visite o site: [CLICANDO AQUI!](https://project-rocky-pages.netlify.app/)
 
 <h1 align='center'>📌 PREVIEW 📌</h1> </br>
 
