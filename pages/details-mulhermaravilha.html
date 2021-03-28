@@ -7,7 +7,7 @@
     <!----------- SEO ----------->
     <title>CineLovers Mulher Maravilha</title>
 
-    <meta name="description" content="Daily reports, updated and from a reliable source, with qualified professionals">
+    <meta name="description" content="Information and recommendations for films and series.">
 
     <!----------- Favicon ----------->
     <link rel="shortcut icon" href="../assets/img/global/favicon" type="image/x-icon">
@@ -16,104 +16,182 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/pages.css">
-
 </head>
+
 <body>
-    
+    <!-- --------------- HEADER ----------------->
     <header class="header">
 
         <nav class="nav">
 
-            <div class="header__pesquisa">
+            <!-- --------------- MENU HAMBURUGER ----------------->
+            <input onclick="Modal.open()" id="menu" type="checkbox">
 
-                <picture class="header__menu__hamburuger">
-                    <img src="../assets/img/global/exemplo-menu.png" alt="Exemplo menu hamburguer">
-                </picture>
+            <label for="menu">
+                <div class="nav__menu">
+                    <spam class="nav__menu__hamburguer"></spam>
+                </div>
+            </label>
 
-                <picture class="header__logo">
-                    <a href="../index.html">
-                        <img src="../assets/img/global/logo.png" alt="Logo NEWS">
-                    </a>
-                </picture>
+            <!-- MODAL MENU -->
+            <div class="nav__modal nav__modal__menu">
+                <div class="nav__modal__open">
 
-                <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar Filmes">
+                    <img onclick="Modal.close()" src="assets/img/global/logo.png" alt="">
+                    <ul>
+                        <li><a onclick="Modal.close()" href="#">Inicio</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Destaques</a></li>
+                    </ul>
 
+                </div>
             </div>
+
+            <div class="header__logo">
+                <a href="../index.html">
+                    <img src="../assets/img/global/logo.png" alt="Logo NEWS">
+                </a>
+            </div>
+
+            <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar Filmes">
+
         </nav>
 
     </header>
 
     <article>
-
+        <!-- --------------- Details movie Mulher Maravilha----------------->
         <section>
             <div class="film">
                 <div class="film__image">
                     <img src="../assets/img/cards-films/mulher-maravilha.jpg" alt="Mulher Maravilha">
                     
-                    <a class="film__trailer" href="#trailer">Assista ao Trailer!</a>
+                    <a class="film__trailer" href="#trailer">
+                        Assista ao Trailer!
+                    </a>
+
                 </div>
+
                 <div class="film__description">
-                    <h1 class="film__title">Mulher-Maravilha 1984 (2020)
-                        
+                    
+                    <h1 class="film__title">
+                        Mulher-Maravilha 1984 (2020)
                     </h1>
-                    <p class="film__sinopse">Sinopse:</p>
-                    <p>Diana, a princesa da ilha de Themyscira, possui poderes sobre-humanos e desde criança que foi treinada para ser uma guerreira imbatível. Depois de ter lutado contra as forças nazis durante a Segunda Grande Guerra, volta a entrar em acção na década de 1980, quando o mundo vive em plena Guerra Fria. Nesta aventura, os inimigos que tem de combater são o megalómano Maxwell Lord e a arqueóloga Barbara Minerva que, depois de vender a sua alma a uma deidade maligna, se transformou na poderosa Cheetah e se assume agora como arqui-inimiga da Mulher-Maravilha.
+
+                    <p class="film__sinopse">
+                        Sinopse:
                     </p>
-                    <p class="film__creator"> Criador(a): Patty Jenkins</p>
+
+                    <p>
+                        Diana, a princesa da ilha de Themyscira, possui poderes sobre-humanos e desde criança que foi treinada para ser uma guerreira imbatível. Depois de ter lutado contra as forças nazis durante a Segunda Grande Guerra, volta a entrar em acção na década de 1980, quando o mundo vive em plena Guerra Fria. Nesta aventura, os inimigos que tem de combater são o megalómano Maxwell Lord e a arqueóloga Barbara Minerva que, depois de vender a sua alma a uma deidade maligna, se transformou na poderosa Cheetah e se assume agora como arqui-inimiga da Mulher-Maravilha.
+                    </p>
+
+                    <p class="film__creator">
+                        Criador(a): Patty Jenkins
+                    </p>
 
                     <div class="film__content__classificao">
-                        <p class="film__classificacao">68%</p>
-                        <p class="film__classificacao__text">Classificação geral dos Utilizadores</p>
+                        <p class="film__classificacao">
+                            68%
+                        </p>
 
+                        <p class="film__classificacao__text">
+                            Classificação geral dos Utilizadores
+                        </p>
                     </div>
-
                 </div>
             </div>
         </section>
 
+        <!-- --------------- Cast Movies ----------------->
         <section class="actors">
-            <h2 class="actors__title">Elenco da Série</h2>
+
+            <h2 class="actors__title">
+                Elenco da Série
+            </h2>
 
             <div class="actors__content">
-
+                <!-- --------------- Actor one ----------------->
                 <div class="actors__description">               
                     <img src="../assets/img/actors/mulher-maravilha/gat-gadot.jpg" alt="Atriz Gat Godot">
-                    <p class="actors__name">Gat Godot</p>
-                    <p class="actors__paper">Diana Prince / Wonder Woman</p>
-                </div>
-                <div class="actors__description">               
-                    <img src="../assets/img/actors/mulher-maravilha/chris-pine.jpg" alt="Ator Chris Pine">
-                    <p class="actors__name">Chris Pine</p>
-                    <p class="actors__paper">Steve Trevor</p>
-                </div>
-                <div class="actors__description">               
-                    <img src="../assets/img/actors/mulher-maravilha/kristen-wiig.jpg" alt="Atriz Kristen Wiig">
-                    <p class="actors__name">Kristen Wiig</p>
-                    <p class="actors__paper">Barbara Minerva / Cheetah</p>
-                </div>
-                <div class="actors__description">               
-                    <img src="../assets/img/actors/mulher-maravilha/padro-pascal.jpg" alt="Ator Pedro Pascal">
-                    <p class="actors__name">Pedro Pascal</p>
-                    <p class="actors__paper">Maxwell Lord</p>
-                </div>
-                <div class="actors__description">               
-                    <img src="../assets/img/actors/mulher-maravilha/robin-wright.jpg" alt="Atriz Robin Wright">
-                    <p class="actors__name">Robin Wright</p>
-                    <p class="actors__paper">Antiope</p>
+
+                    <p class="actors__name">
+                        Gat Godot
+                    </p>
+
+                    <p class="actors__paper">
+                        Diana Prince / Wonder Woman
+                    </p>
+
                 </div>
 
+                <!-- --------------- Actor two ----------------->
+                <div class="actors__description">               
+                    <img src="../assets/img/actors/mulher-maravilha/chris-pine.jpg" alt="Ator Chris Pine">
+
+                    <p class="actors__name">
+                        Chris Pine
+                    </p>
+
+                    <p class="actors__paper">
+                        Steve Trevor
+                    </p>
+                </div>
+
+                <!-- --------------- Actor three ----------------->
+                <div class="actors__description">               
+                    <img src="../assets/img/actors/mulher-maravilha/kristen-wiig.jpg" alt="Atriz Kristen Wiig">
+
+                    <p class="actors__name">
+                        Kristen Wiig
+                    </p>
+
+                    <p class="actors__paper">
+                        Barbara Minerva / Cheetah
+                    </p>
+                </div>
+
+                <!-- --------------- Actor four ----------------->
+                <div class="actors__description">               
+                    <img src="../assets/img/actors/mulher-maravilha/padro-pascal.jpg" alt="Ator Pedro Pascal">
+
+                    <p class="actors__name">
+                        Pedro Pascal
+                    </p>
+
+                    <p class="actors__paper"
+                    >Maxwell Lord
+                </p>
+                </div>
+
+                <!-- --------------- Actor five ----------------->
+                <div class="actors__description">               
+                    <img src="../assets/img/actors/mulher-maravilha/robin-wright.jpg" alt="Atriz Robin Wright">
+
+                    <p class="actors__name">
+                        Robin Wright
+                    </p>
+
+                    <p class="actors__paper"
+                    >Antiope
+                </p>
+                </div>
             </div>
         </section>
 
+        <!-- --------------- Some information from the film ----------------->
         <section class="details">
             <div class="details__film">
-                <div class="details__info" >
+                <div class="details__info">
+
                     <div>
                         <p class="details__title">Estado</p>
                         <p class="details__description">Lançado</p>
                         <p class="details__title">Idioma Original</p>
                         <p class="details__description">Inglês</p>
                     </div>
+
                     <div>
                         <p class="details__title">Orçamento</p>
                         <p class="details__description">200.000.000,00</p>
@@ -122,53 +200,80 @@
                     </div>
                 </div>
 
+                <!---- Midia social ---->
                 <div class="details__social">
-                    <p class="details__title">Redes Sociais</p>
-                    <a class="details__icons" title="Visitar instagram" href="#" target="_blank"><img
-                            src="../assets/img/global/instagram.webp" alt=""></a>
-                    <a class="details__icons" title="Visitar Twitter" href="#" target="_blank"><img
-                            src="../assets/img/global/twitter.png" alt=""></a>
-                    <a class="details__icons" title="Visitar Facebook" href="#" target="_blank"><img
-                            src="../assets/img/global/facebook.png" alt=""></a>
-                </div>
 
-                
+                    <p class="details__title">Redes Sociais</p>
+                    
+                    <!---- Instagram Icon ---->
+                    <a class="details__icons" title="Visitar instagram" href="#" target="_blank">
+                        <img src="../assets/img/global/instagram.webp" alt="">
+                    </a>
+                    
+                    <!---- Twitter Icon ---->
+                    <a class="details__icons" title="Visitar Twitter" href="#" target="_blank">
+                        <img src="../assets/img/global/twitter.png" alt="">
+                    </a>
+
+                     <!---- Facebook Icon ---->
+                    <a class="details__icons" title="Visitar Facebook" href="#" target="_blank">
+                        <img src="../assets/img/global/facebook.png" alt="">
+                    </a>
+                </div>
             </div>
 
-
-
+            <!---- Trailer movie ---->
             <div class="trailer">
-                <p id="trailer" class="trailer__title">Assista ao Trailer!</p>
+
+                <p id="trailer" class="trailer__title">
+                    Assista ao Trailer!
+                </p>
+
+                <!---- Video YouTube ---->
                 <iframe width="450" height="250" src="https://www.youtube.com/embed/bkts8Tn9hgU"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
-
         </section>
 
+        <!-- --------------- Movie recommendations ----------------->
         <section class="recommendation">
-            <p class="recommendation__title">Recomendações de filmes em alta</p>
+
+            <p class="recommendation__title">
+                Recomendações de filmes em alta
+            </p>
+
             <div class="recommendation__card">
                 <div class="recommendation__card__content">
-                    <p class="card__title">Mulher Maravilha</p>
-                    <a href="details-wandavision.html"><img src="../assets/img/cards-films/wandavision.jpg"
-                    alt=""></a>
+                    <p class="card__title"
+                    >Mulher Maravilha
+                </p>
+
+                    <a href="details-wandavision.html">
+                        <img src="../assets/img/cards-films/wandavision.jpg"
+                    alt="Filme WandaVision">
+                </a>
                 </div>
+
                 <div class="recommendation__card__content">
-                    <p class="card__title">Godzilla vs Kong</p>
-                    <a href="details-godzillaKong.html"><img src="../assets/img/cards-films/godzilla-vs-kong.jpg"
-                    alt=""></a>
+                    <p class="card__title">
+                        Godzilla vs Kong
+                    </p>
+                    
+                    <a href="details-godzillaKong.html">
+                        <img src="../assets/img/cards-films/godzilla-vs-kong.jpg"
+                    alt="Filme Godzilla vs King kong">
+                </a>
                 </div>
             </div>
-
         </section>
-
     </article>
 
+    <!-- --------------- Footer ----------------->
     <footer>
         <p class="footer">&copy; 2021 Luiz Eduardo - Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>

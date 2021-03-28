@@ -1,0 +1,39 @@
+@media only screen and (max-width: 768px) {
+    /*================= HEADER =================*/
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__logo img {
+        display: none;
+    }
+    .nav__menu {
+        width: 40px;
+        height: 40px;
+        top: -2rem;
+    }
+
+    .nav__menu__hamburguer {
+        top: 20px;
+        left: 8px;
+    }
+
+    .nav__menu__hamburguer {
+        height: 2px;
+        width: 25px;
+    }
+
+    .header__logo img {
+        width: 80px;
+    }
+
+    #pesquisar{
+        padding: 0.6rem;
+        width: 130px;
+        font-size: 0.8rem;
+    } 
+
+    /*================= Inside the card =================*/
+
+}

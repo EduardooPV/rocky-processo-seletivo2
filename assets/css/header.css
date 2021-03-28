@@ -1,34 +1,152 @@
+/* --------------- Header main ---------------*/
 .header {
-    background-color: rgba(165, 42, 42, 0.993);
+    height: 100px;
     width: 100%;
+    
+    background-color: rgba(165, 42, 42, 0.993);
 }
 
-.header__pesquisa {
-    margin: 0rem 2rem;
-    
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin: 0rem 2rem;
+    height: 100%;
 }
 
+/*------------ MENU HAMBURGUER ------------*/
+.nav__menu {
+    top: -8.9rem;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    background: white;
+
+    cursor: pointer;
+    box-shadow: 0 0 0 0  #fff, 0 0 0 0  #fff;
+}
+
+    /*Hover animation*/
+    .nav__menu:hover {
+        box-shadow: 0 0 0 8px  #fff, 0 0 0 8px  #fff;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+
+.nav__menu__hamburguer {
+    position: relative;
+    top: 30px;
+    left: 15px;
+
+    display: block;
+    height: 2px;
+    width: 30px;
+
+    background: #000;
+
+    transition: .5s ease-in-out;
+    z-index: 999;
+}
+
+    .nav__menu__hamburguer:before,
+    .nav__menu__hamburguer:after {
+        display: block;
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background: #000;
+
+        content: '';
+        transition: .5s ease-in-out;
+    }
+
+    .nav__menu__hamburguer:before {
+        top: -10px;
+    }
+
+    .nav__menu__hamburguer::after {
+        bottom: -10px;
+    }
+
+#menu {
+    display: none;
+}
+
+
+/* --------------- Modal when opening the hamburger menu ---------------*/
+.nav__modal {
+    display: flex;
+    top: 0;
+    left: 0;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.7);  
+
+    opacity: 0;        
+    visibility: hidden;
+    z-index: 999;
+}
+
+.nav__modal.active {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.nav__modal__open {
+    position: relative;
+    padding: 2rem 4rem;
+    max-width: 400px;
+
+    text-align: center;
+    font-size: 2rem;
+
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.800);
+}
+
+    .nav__modal__open > ul > li {
+        padding-top: 2rem;   
+        
+        list-style: none;
+    }
+
+    .nav__modal__open  a {
+        color: black;
+    }
+
+    .nav__modal__open img {
+        width: 50%;
+        cursor: pointer;
+    }
+
+/* --------------- Search Bar ---------------*/
 #pesquisar{
     padding: 0.6rem;
-    font-size: 1rem;
-    background-color: rgba(153, 153, 153, 0.849);
     border-radius: 20px;
+
+    font-size: 1rem;
     
+    background-color: rgba(153, 153, 153, 0.849);
 } 
 
-::-webkit-input-placeholder {
-    color: white;
-    font-weight: bolder;
- }
+    ::-webkit-input-placeholder {
+        color: white;
+        font-weight: bolder;
+    }
 
+
+ /* --------------- Logo ---------------*/
 .header__logo img {
-    width: 18rem;
-    margin-left: 9rem;
+    position: absolute;
+    margin: -3.5rem auto;
+    width: 110px;
 }
 
-.header__menu__hamburuger img {
-    width: 3rem;
-}
+

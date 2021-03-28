@@ -9,7 +9,7 @@
     <!----------- SEO ----------->
     <title>CineLovers Media</title>
 
-    <meta name="description" content="Daily reports, updated and from a reliable source, with qualified professionals">
+    <meta name="description" content="Information and recommendations for films and series.">
 
     <!----------- Favicon ----------->
     <link rel="shortcut icon" href="assets/img/global/favicon" type="image/x-icon">
@@ -17,128 +17,142 @@
     <!----------- Import Files CSS ----------->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
-
-
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
-
 <body>
-
+    <!-- --------------- HEADER ----------------->
     <header class="header">
 
         <nav class="nav">
 
-            <div class="header__pesquisa">
+            <!-- --------------- MENU HAMBURUGER ----------------->
+            <input onclick="Modal.open()" id="menu" type="checkbox">
 
-                <picture class="header__menu__hamburuger">
-                    <img src="assets/img/global/exemplo-menu.png" alt="Exemplo menu hamburguer">
-                </picture>
+            <label for="menu">
+                <div class="nav__menu">
+                    <spam class="nav__menu__hamburguer"></spam>
+                </div>
+            </label>
 
-                <picture class="header__logo">
-                    <a href="../index.html">
-                        <img src="../assets/img/global/logo.png" alt="Logo NEWS">
-                    </a>
-                </picture>
+            <!-- MODAL MENU -->
+            <div class="nav__modal nav__modal__menu">
+                <div class="nav__modal__open">
 
-                <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar Filmes">
+                    <img onclick="Modal.close()" src="assets/img/global/logo.png" alt="">
+                    <ul>
+                        <li><a onclick="Modal.close()" href="#">Inicio</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Destaques</a></li>
+                    </ul>
 
+                </div>
             </div>
+
+            <div class="header__logo">
+                <a href="../index.html">
+                    <img src="../assets/img/global/logo.png" alt="Logo NEWS">
+                </a>
+            </div>
+
+            <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar Filmes">
+
         </nav>
 
     </header>
 
     <article>
-        <section class="section">
+        <!-- --------------- Emphasis Movies----------------->
+        <section class="emphasis">
 
-            <h1 class="section__title">Filmes em Destaques</h1>
+            <!----------- Emphasis----------->
+            <h1 class="emphasis__title">
+                Filmes em Destaques
+            </h1>
 
-            <div class="section__container__card">
+            <div class="emphasis__container__card">
 
-                <div class="section__card">
+                <!----------- Emphasis card one ----------->
+                <div class="emphasis__card">
                     <div class="card__content">
                         <p class="card__image">
+
+                            <!----------- Image card ----------->
                             <a href="pages/details-wandavision.html">
                                 <img src="assets/img/cards-films/wandavision.jpg" alt="">
                             </a>
 
+                            <!----------- Title ----------->
                             <a href="pages/details-wandavision.html">
                                 <h3 class="card__title">
                                     WandaVision
                                 </h3>
                             </a>
 
-
+                        <!----------- Description ----------->
                         <p class="card__description">“WandaVision” da Marvel Studios combina o estilo das sitcom
-                            clássicas
-                            com o Universo Cinematográfico da Marvel. Wanda Maximoff e Vision, dois seres superpoderosos
-                            que
-                            levam uma vida suburbana ideal, começam a suspeitar que nem tudo é o que parece.
+                            clássicas com o Universo Cinematográfico da Marvel <br>
+                            <a class="card__link" href="pages/details-mulhermaravilha.html">Continue lendo...</a>
                         </p>
-
                     </div>
-
-                    <a class="card__link" href="pages/details-wandavision.html">Continue lendo...</a>
-
                 </div>
 
-                <div class="section__card">
+                <!----------- Highlights card two ----------->
+                <div class="emphasis__card">
                     <div class="card__content">
                         <p class="card__image">
+
+                            <!----------- Image card ----------->
                             <a href="pages/details-mulhermaravilha.html">
                                 <img src="assets/img//cards-films/mulher-maravilha.jpg" alt="Mulher Maravilha">
                             </a>
 
+                            <!----------- Title ----------->
                             <a href="pages/details-mulhermaravilha.html">
                                 <h3 class="card__title">
                                     Mulher Maravilha
                                 </h3>
                             </a>
 
+                        <!----------- Description ----------->
                         <p class="card__description">Diana, a princesa da ilha de Themyscira, possui poderes
-                            sobre-humanos e desde criança que foi treinada para ser uma guerreira imbatível. Depois de
-                            ter lutado contra as forças nazis durante a Segunda Grande Guerra, volta a entrar em acção
-                            na década de 1980, quando o mundo vive em plena Guerra Fria. Nesta aventura, os inimigos que
-                            tem de combater são o megalómano Maxwell Lord e a arqueóloga Barbara Minerva que, depois de
-                            vender a sua alma a uma deidade maligna, se transformou na poderosa Cheetah e se assume
-                            agora como arqui-inimiga da Mulher-Maravilha.
+                            sobre-humanos e desde criança que foi treinada para ser uma guerreira imbatível <a
+                                class="card__link" href="pages/details-mulhermaravilha.html">Continue lendo...</a>
                         </p>
                     </div>
-                    <a class="card__link" href="pages/details-mulhermaravilha.html">Continue lendo...</a>
                 </div>
 
-                <div class="section__card">
+                <!----------- Highlights card three ----------->
+                <div class="emphasis__card">
                     <div class="card__content">
                         <p class="card__image">
+
+                            <!----------- Image card ----------->
                             <a href="pages/details-godzillaKong.html">
                                 <img src="assets/img/cards-films/godzilla-vs-kong.jpg" alt="">
                             </a>
+                            <!----------- Title ----------->
+                            <a href="pages/details-godzillaKong.html">
+                                <h3 class="card__title">
+                                    GodZilla vs Kong
+                                </h3>
+                            </a>
 
-                        <a href="pages/details-godzillaKong.html">
-                            <h3 class="card__title">
-                                GodZilla vs Kong
-                            </h3>
-                        </a>
-
+                        <!----------- Description ----------->
                         <p class="card__description">Uma luta pelo reino dos monstros, entre o imparável Godzilla e o
-                            gigantesco Kong, num mundo onde o homem e os monstros coexistem e os grupos inimigos querem
-                            manipular os Titãs para que a guerra comece a surgir sob o disfarce de uma conspiração
-                            nefasta, ameaçando acabar com a vida no Planeta.
+                            gigantesco Kong, num mundo onde o homem e os monstros coexistem e os grupos
+                            <a class="card__link" href="pages/details-mulhermaravilha.html">Continue lendo...</a>
                         </p>
-
-
                     </div>
-
-                    <a class="card__link" href="pages/details-godzillaKong.html">Continue lendo...</a>
-
                 </div>
             </div>
-
         </section>
 
 
-        <section class="films__action">
+        <section class="films__catalogo">
 
-            <h2 class="section__title">Filmes de ação</h3>
+            <h2 class="emphasis__title">Filmes de ação</h3>
 
                 <div class="card__category">
 
@@ -175,9 +189,9 @@
 
         </section>
 
-        <section class="films__animation">
+        <section class="films__catalogo">
 
-            <h2 class="section__title">Filmes de Animação</h3>
+            <h2 class="emphasis__title">Filmes de Animação</h3>
 
                 <div class="card__category">
 
@@ -214,9 +228,9 @@
 
         </section>
 
-        <section class="films__comedy">
+        <section class="films__catalogo">
 
-            <h2 class="section__title">Filmes de comédia</h3>
+            <h2 class="emphasis__title">Filmes de comédia</h3>
 
                 <div class="card__category">
 
@@ -227,7 +241,7 @@
 
                     <div class="card__film">
                         <img src="assets/img/cards-films/comedy/convecao-das-bruxas.jpg" alt="Conveção das Bruxas">
-                        <h3 class="card__tile">Conveção das Bruxas</h3>
+                        <h3 class="card__tile">Convenção Bruxas</h3>
                     </div>
 
                     <div class="card__film">
@@ -246,20 +260,18 @@
 
                     <div class="card__film">
                         <img src="assets/img/cards-films/comedy/principe-newyork.jpg" alt="Um principe em Nova Iorque">
-                        <h3 class="card__tile">Principe em NewYork<h3>
+                        <h3 class="card__tile">Principe NewYork<h3>
                     </div>
 
                 </div>
 
         </section>
 
-        <footer>
-            <p class="footer">&copy; 2021 Luiz Eduardo - Todos os direitos reservados.</p>
+        <!-- --------------- Footer ----------------->
+        <footer class="footer">
+            <p>&copy; 2021 Luiz Eduardo - Todos os direitos reservados.</p>
         </footer>
-
     </article>
-
     <script src="scripts/script.js"></script>
 </body>
-
 </html>

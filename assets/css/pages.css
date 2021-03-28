@@ -1,3 +1,4 @@
+/*================= Container film description =================*/
 .film {
     display: flex;
     flex-wrap: wrap;
@@ -5,10 +6,10 @@
     align-items: center;
 
     margin: 1rem auto;
-    width: 90%;
-    max-width: 1000px;
     padding: 2rem;
-    
+    max-width: 1000px;
+    border-radius: 10px;
+
     background-color: #ffffff9d;
 
     animation: AnimationLeftToRight 1s 1s 1;
@@ -21,38 +22,78 @@
     margin-bottom: 1.3rem;
 }
 
-.film__image img {
-    width: 250px;
+    .film__image img {
+        width: 250px;
+        border-radius: 10px;
+    }
+
+.film__trailer {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+    border-radius: 10px;
+   
+    background-color: #F02C0E;
+    color: white;
+
+    font-size: 1.5em;
 }
 
+    .film__trailer:hover {
+        background-color: white;
+        color: red;
+    }
+
 .film__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 1rem;
     padding: 1rem;
     width: 70%;
-    color: #BFBFBF;
+    border-radius: 10px;
+
     background-color:#db5645fb;
+    color: #BFBFBF;
+
     box-shadow: 3px 3px 10px black;    
 }
 
 .film__title {
     font-size: 2.4em;
     color: white;
+    text-align: center;
 }
 
 .film__sinopse {
     margin: 1em 0;
-    font-weight: bold;
-    font-size: 1.2em;
+
     color: white;
+
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .film__creator {
+    margin: 1rem 0;
+
     color: white;
-    margin-top: 1rem;
+
     font-weight: bold;
+}
+
+.film__content__classificao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    padding: 0 10px;
+    width: 130px;
+    min-width: 180px;
+    border-radius: 10px;
+
+    background-color: #40121A;
+
+    box-shadow: 2px 2px 8px black;
 }
 
 .film__classificacao {
@@ -70,74 +111,46 @@
     text-align: center;
 }
 
-.film__content__classificao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    background-color: #40121A;
-    box-shadow: 2px 2px 8px black;
-    width: 130px;
-    min-width: 180px;
-    
-}
-
-.film__trailer {
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    display: flex;
-   
-    background-color: #F02C0E;
-    color: white;
-    font-size: 1.5em;
-    margin-bottom: 2rem;
-}
-
-.film__trailer:hover {
-    background-color: white;
-    color: red;
-}
-
-
-
+/*================= Container actors info. =================*/
 .actors {
-    animation: AnimationRightToLeft 1s 1s 1;
-
-    margin: 1rem auto;
-    width: 90%;
-    max-width: 1000px;
+    margin: 2rem auto;
     padding: 2rem;
+    max-width: 1000px;
+    border-radius: 10px;
+    
     background-color: #ffffff9d;
+    
+    animation: AnimationRightToLeft 1s 1s 1;
 }
 
 .actors__title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
+
+    text-align: center;
+    font-size: 2.5em;
 }
 
 .actors__content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 
 .actors__description {
-    background-color: #ffffffbb;
+    margin: 10px;
+    padding: 0.5rem;
+    border-radius: 10px;
     width: 155px;
     height: 270px;
-    padding: 0.5rem;
-    margin: 10px;
-    border-radius: 10px;
-    
     box-shadow: 2px 2px 10px;
+
+    background-color: #ffffffbb;
 }
 
-
+    .actors__description img {
+        border-radius: 10px;
+    }
 
 .actors__name {
     text-align: center;
@@ -147,20 +160,22 @@
 .actors__paper {
     text-align: center;
     font-size: 0.9em;
+
     color: rgb(97, 97, 97);
 }
 
-
-
+/*================= Container Movie details =================*/
 .details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
     margin: 1rem auto;
-    width: 90%;
+    padding: 2.1rem;
     max-width: 1000px;
-    padding: 2rem;
+    border-radius: 10px;
+
     background-color: #ffffff9d;
 }
 
@@ -168,22 +183,22 @@
     display: flex;
 }
 
-.details__info div {
-    
-    margin: 0 10px;
-}
+    .details__info div {
+        margin: 0 10px;
+    }
 
 .details__social {
     text-align: center;
 }
 
-
 .details__film {
-    background-color: lavenderblush;
+    padding:3rem 4rem;
+    height: 280px;
     box-shadow: 2px 2px 10px;
-    padding: 1rem 4rem;
-    height: 200px;
+
+    background-color: lavenderblush;
 }
+
 .details__title {
     font-size: 1.2em;
 }
@@ -194,28 +209,34 @@
     margin-bottom: 1rem;
 }
 
-.details__icons img {   
-    width: 30px;
-    margin-right: 10px;
-}
+    .details__icons img {   
+        width: 30px;
+        margin-right: 10px;
+    }
 
+/*================= TRAILER Movie details =================*/
 .trailer__title {
     margin-top: 1rem;
+
     text-align: center;
     font-size: 1.7em;
 }
 
-
+/*================= Movies recommendation =================*/
 .recommendation {  
     margin: 1rem auto;
     width: 90%;
     max-width: 1000px;
+    border-radius: 10px;
+
     background-color: #ffffff9d;
 }
 
 .recommendation__title {
-    text-align: center;
     margin-top: 2rem;
+    padding: 2rem;
+
+    text-align: center;
     font-size: 2.5em;
 }
 
@@ -225,10 +246,11 @@
     justify-content: center;
 }
 
-.recommendation__card__content:hover {
-    background-color: rgb(223, 223, 223);
-    transition: 0.7s;
-} 
+    .recommendation__card__content:hover {
+        background-color: rgb(223, 223, 223);
+        border-radius: 10px;
+        transition: 0.5s;
+    } 
 
 
 .recommendation__card__content {
@@ -239,6 +261,7 @@
 .card__title {
     text-align: center;
     font-size: 1.3em;
+
     color: black;
 }
 

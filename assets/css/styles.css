@@ -32,18 +32,18 @@ html {
     background-size: cover;
 }
 
-
-
-
 /*================= Top 3 films Emphasis =================*/
-.section__title {
-    margin: 1rem;
+.emphasis {
+    margin: 4rem 0;
+}
+.emphasis__title {
+    margin: 3rem;
 
     font: normal bold 2.4em 'Montserrat', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-.section__container__card {
+.emphasis__container__card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -51,7 +51,7 @@ html {
 }
 
 
-.section__card {
+.emphasis__card {
     width: 23%;
     min-width: 200px;
     max-width: 300px;
@@ -64,13 +64,13 @@ html {
 }
 
 
-.section__card:nth-child(1) {
+.emphasis__card:nth-child(1) {
     animation: AnimationLeftToRight 1s 1s 1;
 }
-.section__card:nth-child(2) {
+.emphasis__card:nth-child(2) {
     animation: AnimationDownToUp 1s 1s 1;
 }
-.section__card:nth-child(3) {
+.emphasis__card:nth-child(3) {
     animation: AnimationRightToLeft 1s 1s 1;
 }
 
@@ -80,7 +80,6 @@ html {
     padding: 1rem;
 
     overflow: hidden;
-   
 }
 
 .card__content a {
@@ -110,69 +109,58 @@ html {
 }
 
 .card__description {
-    max-height: 2ch;
-    margin: 2rem 0;
-
-    font-size: 1em;
+    
+    font-size: 0.8em;
 }
 
-.card__link {
-    margin:1rem 1rem;
-
+.card__content .card__link {
+    color: red;
     font-weight: bold;
-    
-    color:rgb(218, 1, 1);
 }
 
 /*================= Action category =================*/
-.films__action {
-
+.films__catalogo {
+    margin: 1rem auto;
     padding: 5px;
+    max-width: 1000px;
     
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 1400px;
     background-color: var(--cards__background);
-}
-
-.films__animation {
-
-    padding: 5px;
-    margin-bottom: 10px;
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 1400px;
-
-    background-color:  var(--cards__background);
-}
-
-.films__comedy {
-
-    padding: 5px;
-    margin-bottom: 10px;
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 1400px;
-    background-color:  var(--cards__background);
 }
 
 /*================= Container genre =================*/
 .card__category {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    
+    padding: 20px;
 }
 
 /*================= Films =================*/
 .card__film {
     margin: 5px ;
-    padding: 10px;
+    padding: 5px;
+    border-radius: 20px;
     box-shadow: 2px 2px 10px black;
-    color: white;
-    background: rgba(0, 0, 0, 0.671);
 
-    font-size: 1em;
+    background: rgba(0, 0, 0, 0.671);
+    color: white;
+    
+    font-size: 0.9em;
+
+    opacity: 0.9;
     text-align: center;
+}
+
+.card__film:hover {
+    background: rgba(0, 0, 0, 0.800);
+    
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.card__film img {
+    border-radius: 20px;
 }
 
 .card__film img {
@@ -181,8 +169,7 @@ html {
     max-width: 200px;
 }
 
-
-
+/*================= Animations card initial index.html=================*/
 @keyframes AnimationLeftToRight{
     0%{
         transform: translate(-100vw)
@@ -193,7 +180,6 @@ html {
     }
 }
 
-/* Description (Lorem) */
 @keyframes AnimationRightToLeft{
     0%{
         transform: translate(100vw)
@@ -204,7 +190,6 @@ html {
     }
 }
 
-/* Button (ENTRE EM CONTATO AGORA) */
 @keyframes AnimationDownToUp{
     0%{
         transform: translateY(100vh)

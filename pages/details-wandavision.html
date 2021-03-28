@@ -8,7 +8,7 @@
     <!----------- SEO ----------->
     <title>CineLovers WandaVision</title>
 
-    <meta name="description" content="Daily reports, updated and from a reliable source, with qualified professionals">
+    <meta name="description" content="Information and recommendations for films and series.">
 
     <!----------- Favicon ----------->
     <link rel="shortcut icon" href="../assets/img/global/favicon" type="image/x-icon">
@@ -17,106 +17,184 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/pages.css">
-
 </head>
 
 <body>
-
+    <!-- --------------- HEADER ----------------->
     <header class="header">
 
         <nav class="nav">
 
-            <div class="header__pesquisa">
+            <!-- --------------- MENU HAMBURUGER ----------------->
+            <input onclick="Modal.open()" id="menu" type="checkbox">
 
-                <picture class="header__menu__hamburuger">
-                    <img src="../assets/img/global/exemplo-menu.png" alt="Exemplo menu hamburguer">
-                </picture>
+            <label for="menu">
+                <div class="nav__menu">
+                    <spam class="nav__menu__hamburguer"></spam>
+                </div>
+            </label>
 
-                <picture class="header__logo">
-                    <a href="../index.html">
-                        <img src="../assets/img/global/logo.png" alt="Logo NEWS">
-                    </a>
-                </picture>
+            <!-- MODAL MENU -->
+            <div class="nav__modal nav__modal__menu">
+                <div class="nav__modal__open">
 
-                <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar Filmes">
+                    <img onclick="Modal.close()" src="assets/img/global/logo.png" alt="">
+                    <ul>
+                        <li><a onclick="Modal.close()" href="#">Inicio</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Destaques</a></li>
+                    </ul>
 
+                </div>
             </div>
+
+            <div class="header__logo">
+                <a href="../index.html">
+                    <img src="../assets/img/global/logo.png" alt="Logo NEWS">
+                </a>
+            </div>
+
+            <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar Filmes">
+
         </nav>
 
     </header>
 
     <article>
-
+        <!-- --------------- Details movie WandaVision----------------->
         <section>
             <div class="film">
                 <div class="film__image">
-                    <img src="../assets/img/cards-films/wandavision.jpg" alt="">
+                    <img src="../assets/img/cards-films/wandavision.jpg" alt="Filme WandaVision">
 
-                    <a class="film__trailer" href="#trailer">Assista ao Trailer!</a>
+                    <a class="film__trailer" href="#trailer">
+                        Assista ao Trailer!
+                    </a>
                 </div>
+
                 <div class="film__description">
-                    <h1 class="film__title">Wanda Vision (2021)</h1>
-                    <p class="film__sinopse">Sinopse:</p>
-                    <p>“WandaVision” da Marvel Studios combina o estilo das sitcom
+
+                    <h1 class="film__title">
+                        Wanda Vision (2021)
+                    </h1>
+
+                    <p class="film__sinopse">
+                        Sinopse:
+                    </p>
+
+                    <p>
+                        “WandaVision” da Marvel Studios combina o estilo das sitcom
                         clássicas
                         com o Universo Cinematográfico da Marvel. Wanda Maximoff e Vision, dois seres superpoderosos
                         que
                         levam uma vida suburbana ideal, começam a suspeitar que nem tudo é o que parece.
                     </p>
-                    <p class="film__creator"> Criador(a): Jac Schaeffer</p>
+
+                    <p class="film__creator">
+                        Criador(a): Jac Schaeffer
+                    </p>
 
                     <div class="film__content__classificao">
-                        <p class="film__classificacao">85%</p>
-                        <p class="film__classificacao__text">Classificação geral dos Utilizadores</p>
+                        <p class="film__classificacao">
+                            85%
+                        </p>
+
+                        <p class="film__classificacao__text">
+                            Classificação geral dos Utilizadores
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- --------------- Cast Movies ----------------->
         <section class="actors">
-            <h2 class="actors__title">Elenco da Série</h2>
+
+            <h2 class="actors__title">
+                Elenco da Série
+            </h2>
 
             <div class="actors__content">
-
+                <!-- --------------- Actor one ----------------->
                 <div class="actors__description">
                     <img src="../assets/img/actors/wandavision/elizabeth-olsen.jpg" alt="Atriz Elizabeth Olsen">
-                    <p class="actors__name">Elizabeth Olsen</p>
-                    <p class="actors__paper">Wanda Maximoff / The Scarlet Witch</p>
-                </div>
-                <div class="actors__description">
-                    <img src="../assets/img/actors/wandavision/paul-bettany.jpg" alt="Ator Paul Bettany">
-                    <p class="actors__name">Paul Bettany</p>
-                    <p class="actors__paper">Vision / The Vision</p>
-                </div>
-                <div class="actors__description">
-                    <img src="../assets/img/actors//wandavision/kathryn-hahn.jpg" alt="Atriz Kathryn Hahn">
-                    <p class="actors__name">Kathryn Hahn</p>
-                    <p class="actors__paper">Agatha Harkness / Agnes</p>
-                </div>
-                <div class="actors__description">
-                    <img src="../assets/img/actors//wandavision/teyonah-parris.jpg" alt="Atriz Teyonah Parris">
-                    <p class="actors__name">Teyonah Parris</p>
-                    <p class="actors__paper">Monica Tambeau / Geraldine</p>
-                </div>
-                <div class="actors__description">
-                    <img src="../assets/img/actors/wandavision/randall-park.jpg" alt="Ator Randall Park">
-                    <p class="actors__name">Randall Park</p>
-                    <p class="actors__paper">Jimmy Woo</p>
+
+                    <p class="actors__name">
+                        Elizabeth Olsen
+                    </p>
+
+                    <p class="actors__paper">
+                        Wanda Maximoff / The Scarlet Witch
+                    </p>
                 </div>
 
+                <!-- --------------- Actor two----------------->
+                <div class="actors__description">
+                    <img src="../assets/img/actors/wandavision/paul-bettany.jpg" alt="Ator Paul Bettany">
+
+                    <p class="actors__name">
+                        Paul Bettany
+                    </p>
+
+                    <p class="actors__paper">
+                        Vision / The Vision
+                    </p>
+                </div>
+
+                <!-- --------------- Actor three----------------->
+                <div class="actors__description">
+                    <img src="../assets/img/actors//wandavision/kathryn-hahn.jpg" alt="Atriz Kathryn Hahn">
+
+                    <p class="actors__name">
+                        Kathryn Hahn
+                    </p>
+
+                    <p class="actors__paper">
+                        Agatha Harkness / Agnes
+                    </p>
+                </div>
+
+                <!-- --------------- Actor four ----------------->
+                <div class="actors__description">
+                    <img src="../assets/img/actors//wandavision/teyonah-parris.jpg" alt="Atriz Teyonah Parris">
+
+                    <p class="actors__name">
+                        Teyonah Parris
+                    </p>
+
+                    <p class="actors__paper">
+                        Monica Tambeau / Geraldine
+                    </p>
+                </div>
+
+                <!-- --------------- Actor five ----------------->
+                <div class="actors__description">
+                    <img src="../assets/img/actors/wandavision/randall-park.jpg" alt="Ator Randall Park">
+
+                    <p class="actors__name">
+                        Randall Park
+                    </p>
+
+                    <p class="actors__paper">
+                        Jimmy Woo
+                    </p>
+                </div>
             </div>
         </section>
 
+        <!-- --------------- Some information from the film ----------------->
         <section class="details">
             <div class="details__film">
                 <div class="details__info">
+
                     <div>
                         <p class="details__title">Estado</p>
                         <p class="details__description">Terminada</p>
                         <p class="details__title">Idioma Original</p>
                         <p class="details__description">Inglês</p>
                     </div>
+
                     <div>
                         <p class="details__title">Emissora</p>
                         <p class="details__description">Disney</p>
@@ -125,55 +203,78 @@
                     </div>
                 </div>
 
+                <!---- Midia social ---->
                 <div class="details__social">
+
                     <p class="details__title">Redes Sociais</p>
-                    <a class="details__icons" title="Visitar instagram" href="#" target="_blank"><img
-                            src="../assets/img/global/instagram.webp" alt=""></a>
-                    <a class="details__icons" title="Visitar Twitter" href="#" target="_blank"><img
-                            src="../assets/img/global/twitter.png" alt=""></a>
-                    <a class="details__icons" title="Visitar Facebook" href="#" target="_blank"><img
-                            src="../assets/img/global/facebook.png" alt=""></a>
+
+                    <!---- Instagram Icon ---->
+                    <a class="details__icons" title="Visitar instagram" href="#" target="_blank">
+                        <img src="../assets/img/global/instagram.webp" alt="">
+                    </a>
+
+                    <!---- Twitter Icon ---->
+                    <a class="details__icons" title="Visitar Twitter" href="#" target="_blank">
+                        <img src="../assets/img/global/twitter.png" alt="">
+                    </a>
+
+                    <!---- Facebook Icon ---->
+                    <a class="details__icons" title="Visitar Facebook" href="#" target="_blank">
+                        <img src="../assets/img/global/facebook.png" alt="">
+                    </a>
                 </div>
-
-
             </div>
 
-
-
+            <!---- Trailer movie ---->
             <div id="trailer" class="trailer">
-                <p class="trailer__title">Assista ao Trailer!</p>
+
+                <p class="trailer__title">
+                    Assista ao Trailer!
+                </p>
+
+                <!---- Video YouTube ---->
                 <iframe width="450" height="250" src="https://www.youtube.com/embed/qdDr9eH_PmY"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
-
         </section>
 
+        <!-- --------------- Movie recommendations ----------------->
         <section class="recommendation">
-            <p class="recommendation__title">Recomendações de filmes em alta</p>
+
+            <p class="recommendation__title">
+                Recomendações de filmes em alta
+            </p>
+
             <div class="recommendation__card">
                 <div class="recommendation__card__content">
-                    <p class="card__title">Mulher Maravilha</p>
-                    <a href="details-mulhermaravilha.html"><img src="../assets/img/cards-films/mulher-maravilha.jpg"
-                    alt=""></a>
+                    <p class="card__title">
+                        Mulher Maravilha
+                    </p>
+
+                    <a href="details-mulhermaravilha.html">
+                        <img src="../assets/img/cards-films/mulher-maravilha.jpg" alt="Filmes mulher maravilha">
+                    </a>
                 </div>
+
                 <div class="recommendation__card__content">
-                    <p class="card__title">Godzilla vs Kong</p>
-                    <a href="details-mulhermaravilha.html"><img src="../assets/img/cards-films/godzilla-vs-kong.jpg"
-                    alt=""></a>
+                    <p class="card__title"
+                    >Godzilla vs Kong
+                </p>
+
+                <a href="details-godzillaKong.html">
+                    <img src="../assets/img/cards-films/godzilla-vs-kong.jpg" alt="Filme Godzilla vs King Kong">
+                </a>
                 </div>
             </div>
-
         </section>
     </article>
 
-
-
-    <footer>
-        <p class="footer">&copy; 2021 Luiz Eduardo - Todos os direitos reservados.</p>
+    <!-- --------------- Footer ----------------->
+    <footer class="footer">
+        <p>&copy; 2021 Luiz Eduardo - Todos os direitos reservados.</p>
     </footer>
-
 </body>
-
 </html>
