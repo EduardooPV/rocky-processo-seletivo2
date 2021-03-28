@@ -27,8 +27,10 @@
 
 html {
     font-family: 'Exo', sans-serif;
-    background: url(../img/global/bg.jpg);
-    background-attachment: fixed;
+}
+
+body {
+    background:url(../img/global/bg.jpg) center center fixed; 
     background-size: cover;
 }
 

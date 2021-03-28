@@ -4,3 +4,7 @@
     font-size: 1.5em;
     margin: 4rem;
 }
+
+.footer > p > a {
+    color: black;
+}

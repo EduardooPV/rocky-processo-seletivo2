@@ -1,5 +1,9 @@
 @media only screen and (max-width: 768px) {
     /*================= HEADER =================*/
+    .nav__menu:hover {
+        
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;
@@ -34,6 +38,57 @@
         font-size: 0.8rem;
     } 
 
-    /*================= Inside the card =================*/
+    /*================= CARDS =================*/
+    .card__title {
+        font-size: 0.9em;
+    }
+    
+    /*================= ACTORS =================*/
+    
+    .actors__description {
+        width: 130px;
+    }
 
+    .actors__description img {
+        width: 115px;
+    }
+
+    /*================= DESCRIPTION MOVIE =================*/
+    .film__title {
+        font-size: 1.5em;
+    }
+
+    .film__description {
+        width: 100%;
+    }
+
+    .actors, .film {
+        padding: 0.5rem;
+    }
+
+    /*================= DETAIL =================*/
+    .details__film {
+        width: 95%;
+        max-width: 300px;
+        padding: 2rem 2rem;
+        margin: 1rem;
+    }
+
+    .trailer iframe {
+        width: 100%;
+    }
+
+    /*================= RECOMMENDATION=================*/
+    .recommendation {
+        width: 100%;
+    }
+    
+    .recommendation__card__content {
+        margin: 0rem;
+    }
+    /*================= FOOTER =================*/
+    .footer {
+        font-size: 1em;
+    }
 }
+
